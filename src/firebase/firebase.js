@@ -32,7 +32,7 @@ const firebaseConfig = {
   //   console.log(snapshot.key, snapshot.val())
   // })
 
-  // database.ref('expenses').on("value",(snapshot) => {
+  // database.ref('expenses').once("value").then("snapshot") => {
   //   const expenses = []
   //   snapshot.forEach((childSnapshot) => {
   //     expenses.push({
@@ -43,12 +43,12 @@ const firebaseConfig = {
   //   console.log(expenses)
   // })
 
-database.ref("expenses").push({
-  description: 'Rent',
-  note: '',
-  amount: 109500,
-  createdAt: 891895610
-})
+// database.ref("expenses").push({
+//   description: 'Rent',
+//   note: '',
+//   amount: 109500,
+//   createdAt: 891895610
+// })
 
 
  
