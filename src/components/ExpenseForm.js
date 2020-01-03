@@ -109,7 +109,7 @@ export default class ExpenseForm extends React.Component {
                     numberOfMonths={1}
                     isOutsideRange={() => false}
                     />
-                    <textarea onChange={this.onNoteChange} placeholder='Add a note for your expense (optional)'>
+                    <textarea onChange={this.onNoteChange} value={this.state.note} placeholder='Add a note for your expense (optional)'>
                     </textarea>
                     <button>Add Expense</button>
                 </form>
